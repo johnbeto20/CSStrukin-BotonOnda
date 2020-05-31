@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boton onda</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="btn" class="btn" data-text="Comenzar!">
+            <svg width="280" height="280" viewbox="-40 -40 280 280" class="svg-circle">
+                <circle class="circle-svg" cx="100" cy="100" r="60"></circle>
+            </svg>
+        </button>
+    </div>
+    <svg xmlns="https://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="svg-effect" x="-40" y="-40" width="280" height="280">
+                <feGaussianBlur result="shadowed" stdDeviation="20"/>
+                <feColorMatrix result="MatrixShadowed" in="shadowed" type="matrix"
+                    values="1 1 1 1 0
+                            1 1 1 1 0
+                            1 1 1 1 0
+                            0 0 0 0.2 0"/>
+                <feOffset in="MatrixShadowed" result="moveShadowed" dx="-25" dy="-25"/>
+                <feBlend in="SourceGraphic" result="secondCreate" mode="normal"/>
+                <feGaussianBlur result="secondBlur" in="secondCreate" stdDeviation="20"/>
+                <feColorMatrix result="secondMatrix" in="secondBlur" type="saturate" values="1.6"/>
+            </filter>
+        </defs>
+    </svg>
+</body>
+<script src="main.js"></script>
+</html>
