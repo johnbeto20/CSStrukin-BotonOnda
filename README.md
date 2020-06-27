@@ -22,7 +22,7 @@ Pero en la construcción vi necesario agregar el texto en un <b>data-text</b> pa
 ````
 Luego le aplico los estilos al gusto de uno.
 
-![imagen boton](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![imagen boton](https://raw.githubusercontent.com/johnbeto20/pildoritas-css-BotonOnda/master/img_Readme/image-boton.jpg)
 
 Ya lo que haremos sería construir el elemento SVG que simulará nuestro efecto onda (puede ser hasta un div, yo por que lo quería con SVG XD), y esto lo agregaremos dentro del boton.
 
@@ -35,7 +35,7 @@ Ya lo que haremos sería construir el elemento SVG que simulará nuestro efecto 
 ````
 tendríamos algo así
 
-![imagen circulo](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![imagen circulo](https://raw.githubusercontent.com/johnbeto20/pildoritas-css-BotonOnda/master/img_Readme/imagen-circle.jpg)
 
 pero le aplicaremos estilos para que se vea más acorde a lo que necesitamos.
 
@@ -47,7 +47,7 @@ pero le aplicaremos estilos para que se vea más acorde a lo que necesitamos.
   }
 ````
 
-![imagen circulo ahora](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![imagen circulo ahora](https://raw.githubusercontent.com/johnbeto20/pildoritas-css-BotonOnda/master/img_Readme/imagen-circle-now.jpg)
 
 para generar los detalles de sombra y duplicado del mismo elemento utilizamos <b>Filtros de SVG</b>
 
@@ -95,4 +95,4 @@ Para la animación cree un @keyframe apuntandole al eñemento .svg-circle
 }
 ````
 
-Muestro en esta parte las cosas que se usaron para generar el botón, pero no es un tutorial, solo mostrar los recursos que fueron utilizados para realizar esta pildorita, de igual forma quedará el recurso para que puedan curiosearlo y explorarlo.
+Muestro en esta parte las cosas que se usaron para generar el botón, pero no es un tutorial, solo mostrar los recursos que fueron utilizados para realizar esta pildorita, de igual forma quedará el recurso para que puedan curiosearlo y explorar.
