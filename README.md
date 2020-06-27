@@ -1,4 +1,4 @@
-# CSStrukin-boton-onda
+# Pildoritas css - boton onda
 
 Este boton fue diseñado por
 [@andrew.eugene](https://www.instagram.com/p/CAu-3qggz49/), pero me llamó la atención ver si podía hacer algo similar con HTML y CSS.
