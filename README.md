@@ -81,7 +81,7 @@ para que este filtro impacte en nuestro circulo le agregamos la siguiente propie
 
 Donde <b>url(#svg-effect)</b> es el id del <b>filter</b>
 
-Para la animación cree un @keyframe apuntandole al eñemento .svg-circle
+Para la animación cree un @keyframe apuntandole al elemento .svg-circle
 
 ````CSS
 .btn.active .svg-circle {
@@ -93,6 +93,19 @@ Para la animación cree un @keyframe apuntandole al eñemento .svg-circle
     2% { transform: scale(0); opacity: 1;}
     100% { transform: scale(2.3); opacity: 0;}
 }
+````
+
+La clave es que por JAvascript le enviemos un evento de click, y al hacer click le agregamos la clase <b>.active</b>, y cuando finaliz se la volvemos a remover.
+
+````javascript
+var boton = document.getElementById("btn");
+
+boton.addEventListener('click', (event) => {
+    boton.classList.add('active');
+    this.addEventListener('animationend', (event)=>{
+        boton.classList.remove("active")
+    })
+})
 ````
 
 Este sería nuestro resultado
